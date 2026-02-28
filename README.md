@@ -1,24 +1,19 @@
-# CrewAI Content Creation Crew
-
+# CrewAI Agentic Workflows
 
 This project demonstrates how to use the CrewAI framework to automate content creation and email assistance using autonomous agents. The workflows are implemented in Jupyter notebooks and leverage the CrewAI library to coordinate multiple specialized agents.
 
-
-## Features
-- **Agentic Content Creation**: Three agents (Researcher, Writer, Reviewer) collaborate to produce high-quality, beginner-friendly guides.
-- **Email Jargon Assistant**: An Email Assistant agent helps rewrite emails by replacing technical jargon with simple language and provides suggestions for each jargon found.
-- **Modular Tasks**: Each agent is assigned a specific role and task, ensuring clarity and division of labor.
-- **End-to-End Automation**: From research to writing to review, and email simplification, the processes are fully automated.
-- **Customizable**: Easily adapt agent roles, goals, and tasks for different content domains or communication needs.
-
-
-- `crewai_research_write_QA.ipynb`: Main notebook demonstrating the agentic workflow for content creation.
-- `crewai_email_agent.ipynb`: Notebook showcasing the Email Assistant agent for simplifying emails and replacing jargon.
+## Project Structure
+- `crewai_agent_basic.ipynb`: Demonstrates a basic CrewAI agent setup, ideal for learning the fundamentals of agent creation and task execution.
+- `crewai_research_write_QA.ipynb`: Shows an agentic workflow for content creation, with Researcher, Writer, and Reviewer agents.
+- `crewai_email_agent.ipynb`: Features an Email Assistant agent for simplifying emails and replacing jargon.
 - `requirements.txt`: List of required Python packages.
 
- - `crewai_agent_basic.ipynb`: Notebook demonstrating a basic CrewAI agent setup, ideal for learning the fundamentals of agent creation and task execution.
-
-
+## Features
+- **Basic Agent Example**: Learn CrewAI basics with a simple, single-agent workflow.
+- **Content Creation Crew**: Automate research, writing, and review for educational content.
+- **Email Jargon Assistant**: Rewrite emails by replacing technical jargon with simple language and suggestions.
+- **End-to-End Automation**: From research to writing to review, and email simplification, the processes are fully automated.
+- **Customizable**: Easily adapt agent roles, goals, and tasks for different content domains or communication needs.
 
 ## How It Works
 
@@ -36,8 +31,8 @@ The `crewai_agent_basic.ipynb` notebook demonstrates how to set up and run a sin
 2. **Custom Tool**: The agent uses a custom tool to map common corporate/technical terms to plain English and generates a list of suggestions.
 3. **Crew Coordination**: The CrewAI `Crew` object manages the email simplification task.
 
-
 ## Getting Started
+
 ### Prerequisites
 - Python 3.8+
 - Jupyter Notebook
@@ -62,8 +57,8 @@ The `crewai_agent_basic.ipynb` notebook demonstrates how to set up and run a sin
    OPENAI_API_KEY=your_openai_api_key_here
    ```
 
-
 ### Usage
+
 #### Basic Agent Crew
 1. Open `crewai_agent_basic.ipynb` in Jupyter Notebook or VS Code.
 2. Run all cells to see a simple CrewAI agent perform its assigned task.
@@ -77,25 +72,17 @@ The `crewai_agent_basic.ipynb` notebook demonstrates how to set up and run a sin
 1. Open `crewai_email_agent.ipynb` in Jupyter Notebook or VS Code.
 2. Run all cells to see how the Email Assistant agent suggests jargon replacements and produces a simplified email.
 
-
 ## Customization
 - **Change the Topic**: Modify the task descriptions in the content creation notebook to target a different subject.
 - **Add/Remove Agents**: Define new agent roles or tasks as needed for your workflow.
 - **Adjust Output Format**: Update the `expected_output` fields to change the structure of the generated content or email output.
 - **Expand Jargon List**: Edit the custom tool in the email agent notebook to include more jargon or domain-specific terms.
 
-
-
 ## Example Output
 - The basic agent notebook shows a single agent completing a straightforward task, ideal for learning CrewAI basics.
 - The content creation notebook generates a structured, step-by-step guide with examples, reviewed for clarity and accuracy.
 - The email agent notebook outputs a professional email with all jargons replaced by simple language and a list of suggestions for each jargon found.
 
-
 ## License
 This project is for educational and demonstration purposes.
 
-
-## Acknowledgements
-- [CrewAI](https://github.com/joaomdmoura/crewai) for the agentic workflow framework.
-- OpenAI for language model APIs.
