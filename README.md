@@ -6,14 +6,27 @@ This project demonstrates how to use the CrewAI framework to automate content cr
 - `crewai_agent_basic.ipynb`: Demonstrates a basic CrewAI agent setup, ideal for learning the fundamentals of agent creation and task execution.
 - `crewai_research_write_QA.ipynb`: Shows an agentic workflow for content creation, with Researcher, Writer, and Reviewer agents.
 - `crewai_email_agent.ipynb`: Features an Email Assistant agent for simplifying emails and replacing jargon.
+- `crewai_manager_agent_with_guardrails.ipynb`: Demonstrates a hierarchical multi-agent system with a manager agent and robust guardrails (output schema, validation, retries, logging).
+- `crewai_topic_elaboration.ipynb`: Explores topic elaboration using CrewAI agents.
 - `requirements.txt`: List of required Python packages.
 
 ## Features
 - **Basic Agent Example**: Learn CrewAI basics with a simple, single-agent workflow.
 - **Content Creation Crew**: Automate research, writing, and review for educational content.
 - **Email Jargon Assistant**: Rewrite emails by replacing technical jargon with simple language and suggestions.
+- **Manager Agent with Guardrails**: Hierarchical multi-agent system with a manager agent enforcing output schemas, validation, retries, and logging for robust, reliable workflows.
+- **Topic Elaboration**: Explore and elaborate on topics using CrewAI agents.
 - **End-to-End Automation**: From research to writing to review, and email simplification, the processes are fully automated.
 - **Customizable**: Easily adapt agent roles, goals, and tasks for different content domains or communication needs.
+### Manager Agent with Guardrails
+The `crewai_manager_agent_with_guardrails.ipynb` notebook demonstrates a robust, hierarchical multi-agent system:
+1. **Research Agent**: Finds recent, verifiable facts about a topic.
+2. **Writer Agent**: Writes a concise blog summary using only the researched facts.
+3. **Manager Agent**: Acts as Editor-in-Chief, ensuring factual accuracy, structure, and strict schema compliance.
+4. **Guardrails**: Enforces output schemas, validates outputs, retries on failure, and logs all steps for transparency and debugging.
+5. **Memory & Embedding**: Uses memory and OpenAI embeddings for context retention and improved agent collaboration.
+
+This notebook is ideal for learning how to build reliable, production-grade agentic workflows with strong output guarantees.
 
 ## How It Works
 
@@ -59,6 +72,7 @@ The `crewai_agent_basic.ipynb` notebook demonstrates how to set up and run a sin
 
 ### Usage
 
+
 #### Basic Agent Crew
 1. Open `crewai_agent_basic.ipynb` in Jupyter Notebook or VS Code.
 2. Run all cells to see a simple CrewAI agent perform its assigned task.
@@ -71,6 +85,15 @@ The `crewai_agent_basic.ipynb` notebook demonstrates how to set up and run a sin
 #### Email Assistant Crew
 1. Open `crewai_email_agent.ipynb` in Jupyter Notebook or VS Code.
 2. Run all cells to see how the Email Assistant agent suggests jargon replacements and produces a simplified email.
+
+#### Manager Agent with Guardrails
+1. Open `crewai_manager_agent_with_guardrails.ipynb` in Jupyter Notebook or VS Code.
+2. Run all cells to see a hierarchical agent workflow with robust guardrails (schema validation, retries, logging, and memory).
+3. The final output will be a validated, schema-compliant blog summary and research facts, with all steps logged and errors retried automatically.
+
+#### Topic Elaboration Crew
+1. Open `crewai_topic_elaboration.ipynb` in Jupyter Notebook or VS Code.
+2. Run all cells to explore topic elaboration using CrewAI agents.
 
 ## Customization
 - **Change the Topic**: Modify the task descriptions in the content creation notebook to target a different subject.
